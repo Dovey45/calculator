@@ -1,0 +1,116 @@
+body{
+    max-width: 960px;
+    max-height: 100%;
+    margin: 0;
+    padding: auto;
+ }
+ main {
+      max-width: 960px;
+      max-height: 100%;
+      margin: 0;
+      padding: auto;
+ }
+ h3 {
+    color: white;
+    margin: 5px;
+ }
+ .inpv {
+      width: 530px;
+      height: 230px;  
+      border: 10px solid red;
+      background-color: black;
+      border-top-style: ridge;
+      border-color: grey;
+ }
+  .display {
+      border: 2px solid white;
+      width: 500px;
+      height: 150px;
+      /* margin-left: 10px; */
+      margin-top: 10px;
+      margin-bottom: -5px;
+      background-color: rgb(160, 170, 95);
+      color: black;
+      font-size: 40px;
+      font-weight: 300;
+      text-align: right;
+  }
+  .div1 {
+    background-color: black;
+    width: 531px;
+    border: 10px solid rgb(223, 148, 148);
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+  hr {
+    background-color: aliceblue;
+  }  
+  }
+  button{
+      width: 100px;
+      height: 80px;
+      /* border: 5px solid gray; */
+      border-radius: 20px;
+      color: black;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 20px;
+      font-weight: bold;
+      background-color: aliceblue;
+      margin-left: 2px;
+  }
+  #whip {
+    background-color: rgb(226, 20, 54);
+    color: white;
+    border-bottom-left-radius: 150px;
+  }
+  main {
+    /* border: 1px solid black; */
+    max-width: 800px;
+    max-height: 100%;
+    margin-left: 300px;
+    margin-top: 50px;
+ }
+ .res {
+    background-color: brown;
+    border-bottom-right-radius: 150px;
+ }
+ .ash {
+    background-color: rgb(230, 222, 222);
+ }
+ .black {
+    background-color: rgb(107, 102, 102);
+    color: white;
+ }
+ .gray {
+    background-color: gray;
+ } 
+ .swtch {
+      width: 150px;
+      height: 60px;
+      border: 1px solid black;
+      margin-left: 1000px;
+      margin-bottom: 500px;
+      padding: 5px;
+ }
+ .swtch a{
+   text-decoration: none;
+   text-align: center;
+   color: black;
+ }
+ @media screen and (max-width: 768px) {
+    body{
+      max-width: 20%;
+      padding: 0;
+      overflow: auto;
+      /* display: flex; */
+   }
+ }
+ 
+ @media screen and (max-width: 540px) {
+   body {
+       max-width: 20%;
+       padding: 2px;
+       /* overflow: auto; */
+       display: flex;
+   }
+}
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Scientific Calculator</title>
+</head>
+<body>
+  <div class="container">
+      <main>
+        <div class="display">
+          <div id="clock"></div>
+            <input type="text" id="result">
+        </div>
+        <div class="dbt">
+          <div> 
+            <button id="brac" onclick="inptNumber('(')" class="gray">(</button>
+            <button id="bracc" onclick="inptNumber(')')" class="gray">)</button>
+            <button id="percent" onclick="percent()" class="gray">%</button>
+            <button id="whip" onclick="clearResult()" class="gray">AC</button><br>
+          </div>
+          <div>
+            <button id="sev" onclick="inptNumber('7')">7</button>
+            <button id="eig" onclick="inptNumber('8')" class="ash">8</button>
+            <button id="nin" onclick="inptNumber('9')" class="ash">9</button>
+            <button id="divi" onclick="inptOperator('/')" class="orange">/</button><br>
+          </div>
+          <div>
+            <button id="four" onclick="inptNumber('4')" class="ash">4</button>
+            <button id="fiv" onclick="inptNumber('5')" class="ash">5</button>
+            <button id="six" onclick="inptNumber('6')" class="ash">6</button>
+            <button id="mult" onclick="inptOperator('*')" class="orange">X</button><br>
+          </div>
+          <div>  
+            <button id="one" onclick="inptNumber('1')" class="ash">1</button>
+            <button id="two" onclick="inptNumber('2')" class="ash">2</button>
+            <button id="thr" onclick="inptNumber('3')" class="ash">3</button>
+            <button id="add" onclick="inptOperator('+')" class="orange">+</button><br>
+          </div>
+          <div>
+            <button id="zer" onclick="inptNumber('0')" class="gray">0</button>
+            <button id="dot" onclick="inptNumber('.')" class="gray">.</button>
+            <button id="asp" onclick="inptOperator('+/-')" class="gray">+/-</button>
+            <button id="sub" onclick="inptOperator('-')" class="orange">-</button><br>
+          </div>
+          <div class="xpsc">
+            <button onclick="power()" class="orange">^</button>
+            <button onclick="inpt('log')" class="gray">log</button>
+            <button onclick="inpt('sqr')" class="gray">√</button>
+            <button id="pi-button" onclick="inp('pi')" class="orange">π</button><br>
+          </div> 
+          <div class="stq">
+            <button id="calculate" onclick="calculate()" class="orange">=</button>
+            <button onclick="sin()" class="orange">sin</button>
+            <button onclick="inpt('tan')" class="orange">tan</button>
+            <button onclick="inpt('cos')" class="orange">cos</button>
+          </div>
+        </div>
+        <hr>
+<script src="script.js"></script>
+</main>  
+</div>
+<div class="swtch">
+   <a href="non scientific calculator/">Switch To Non-Scientific Calculator</a>
+</div>
+</body>
+</html>
+
+
+  
+
+
+
+
+
+

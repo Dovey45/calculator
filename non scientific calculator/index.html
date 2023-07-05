@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <main>
+      <div class="inpv">
+         <h3>CASIO</h3>
+         <input class="display" id="display" type="text">
+         <hr>
+      </div>
+      <div class="div1">
+         <button id="sev" onclick="inptNumber('1')" class="black">1</button>
+         <button id="eig" onclick="inptNumber('2')" class="ash">2</button>
+         <button id="nin" onclick="inptNumber('3')" class="ash">3</button>
+         <button id="four" onclick="inptNumber('4')" class="ash">4</button>
+         <button id="mult" onclick="inptOperator('*')" class="black">X</button><br>
+         <button id="fiv" onclick="inptNumber('5')" class="black">5</button>
+         <button id="six" onclick="inptNumber('6')" class="ash">6</button>
+         <button id="one" onclick="inptNumber('7')" class="ash">7</button>
+         <button id="two" onclick="inptNumber('8')" class="ash">8</button>
+         <button id="add" onclick="inptOperator('+')" class="black">+</button><br>
+         <button id="thr" onclick="inptNumber('9')" class="black">9</button>
+         <button id="zer" onclick="inptNumber('0')" class="ash">0</button>
+         <button id="dot" onclick="inptNumber('.')" class="ash">.</button>
+         <button id="sub" onclick="inptOperator('-')" class="ash">-</button>
+         <button id="divi" onclick="inptOperator('/')" class="black">/</button><br>
+         <button id="whip" onclick="clearResult()">AC</button> 
+         <button id="brac" onclick="inptNumber('(')" class="ash">(</button>
+         <button id="bracc" onclick="inptNumber(')')" class="ash">)</button>
+         <button id="percent" onclick="percent()" class="ash">%</button>
+         <button id="equal" onclick="equa()" class="res">=</button>
+         
+       </div>
+   </main>  
+   
+      <script>
+         function inptNumber(number) {
+            var display = document.getElementById("display");
+            display.value += number;
+         }
+         function inptOperator(operator) {
+            var display = document.getElementById("display");
+            display.value += operator;
+         }
+         function percent() {
+            var display = document.getElementById('display');
+            var percent = display.value/100;
+            display.value = percent;
+         }
+         function equa() {
+            var display = document.getElementById("display");
+            display.value = eval(display.value);
+         }
+         function clearResult() {
+            var display = document.getElementById("display");
+            display.value = "";
+         }   
+</script>
+<div class="swtch">
+      <a href="/scientific calculator/">Switch To Scientific Calculator</a>
+</div>
+</body>
+</html>
